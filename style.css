@@ -27,7 +27,7 @@ main {
   .hero {
     margin: 0px;
     width: 100%;
-    gap:  1rem;
+    gap:  0.6rem;
   }
 }
 
