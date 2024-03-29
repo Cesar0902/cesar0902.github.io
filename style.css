@@ -27,21 +27,20 @@ main {
   .hero {
     margin: 0px;
     width: 100%;
-    gap:  0.6rem;
+    gap: 0.6rem;
   }
 }
 
-.hero-data {
-  flex-direction: column;
-}
 .hero header {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.hero p {
+p {
   color: #6b7280;
   font-size: 0.9rem;
+  margin-top: 6px;
+  margin-bottom: 0px;
 }
 
 .direction {
@@ -50,8 +49,10 @@ main {
   align-items: center;
   text-decoration: none;
   color: #6b7280;
-  width: 142px;
+  width: 151px;
   font-size: 0.8rem;
+  margin-top: 6px;
+  margin-bottom: 0px;
 }
 
 .direction:hover {
@@ -61,10 +62,12 @@ main {
 .hero footer {
   display: flex;
   gap: 8px;
-  margin-top: 1rem;
+  margin-top: 6px;
 }
 
 .hero footer a {
+  width: auto;
+  height: auto;
   color: #6b7280;
   border: #989797 solid 1px;
   border-radius: 8px;
@@ -76,15 +79,32 @@ main {
 }
 
 .hero footer a:hover {
-  background-color: rgba(158, 161, 169, 0.921);
+  background-color: #9ea1a9eb;
 }
 
 .hero img {
   aspect-ratio: 199/193;
   object-fit: cover;
   border-radius: 10px;
-  width: 100px;
+  width: 130px;
   flex-shrink: 0;
 }
 
+.about {
+  width: 60%;
+  margin: 30px auto 0;
+  gap: 5rem;
+}
 
+@media (width < 700px) {
+  .about {
+    margin-top: 32px;
+    width: 100%;
+    gap: 0.6rem;
+  }
+}
+
+.about header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
