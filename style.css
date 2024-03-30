@@ -23,6 +23,8 @@ p {
   margin: 6px 0 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
 }
 
 .technology {
@@ -35,7 +37,6 @@ p {
   color: #6b7280;
   font-size: 0.9rem;
 }
-
 
 .hero {
   display: flex;
@@ -72,8 +73,8 @@ p {
 .hero footer a {
   width: auto;
   height: auto;
-  color: #000;
-  border: #989797 solid 1px;
+  color: #484848;
+  border: #868686 solid 1px;
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
@@ -83,7 +84,8 @@ p {
 }
 
 .hero footer a:hover {
-  background-color: #9ea1a9eb;
+  background-color: #777;
+  color: #fff;
 }
 
 .hero img {
