@@ -6,12 +6,6 @@ main {
   padding: 4rem;
 }
 
-@media (width < 800px) {
-  main {
-    padding: 1rem;
-  }
-}
-
 header {
   font-size: 1.5rem;
   font-weight: bold;
@@ -24,6 +18,25 @@ p {
   margin-bottom: 0px;
 }
 
+.techonologies {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: flex;
+}
+
+.technology {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+
 .hero {
   display: flex;
   flex-wrap: nowrap;
@@ -35,21 +48,12 @@ p {
   gap: 5rem;
 }
 
-@media (width < 700px) {
-  .hero {
-    margin: 0px;
-    width: 100%;
-    gap: 0.6rem;
-  }
-}
-
 .direction {
   display: flex;
   gap: 4px;
   align-items: center;
   text-decoration: none;
   color: #6b7280;
-  width: 151px;
   font-size: 0.8rem;
   margin-top: 6px;
   margin-bottom: 0px;
@@ -68,7 +72,7 @@ p {
 .hero footer a {
   width: auto;
   height: auto;
-  color: #6b7280;
+  color: #000;
   border: #989797 solid 1px;
   border-radius: 8px;
   display: inline-flex;
@@ -96,22 +100,29 @@ p {
   gap: 5rem;
 }
 
-@media (width < 700px) {
-  .about {
-    margin-top: 32px;
-    width: 100%;
-    gap: 0.6rem;
-  }
-}
-
-
 .skills {
   width: 60%;
   margin: 30px auto 0;
   gap: 5rem;
 }
 
-@media (width < 700px) {
+@media (width < 800px) {
+  main {
+    padding: 1rem;
+  }
+
+  .hero {
+    margin: 0px;
+    width: 100%;
+    gap: 0.6rem;
+  }
+
+  .about {
+    margin-top: 32px;
+    width: 100%;
+    gap: 0.6rem;
+  }
+
   .skills {
     margin-top: 32px;
     width: 100%;
