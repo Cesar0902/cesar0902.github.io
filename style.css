@@ -18,24 +18,10 @@ p {
   margin-bottom: 0px;
 }
 
-.techonologies {
-  list-style: none;
-  margin: 6px 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1px;
-}
-
-.technology {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  color: #6b7280;
-  font-size: 0.9rem;
+section {
+  width: 60%;
+  margin: 30px auto 0;
+  gap: 5rem;  
 }
 
 .hero {
@@ -96,16 +82,24 @@ p {
   flex-shrink: 0;
 }
 
-.about {
-  width: 60%;
-  margin: 30px auto 0;
-  gap: 5rem;
+.techonologies {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
 }
 
-.skills {
-  width: 60%;
-  margin: 30px auto 0;
-  gap: 5rem;
+.technology {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.9rem;
 }
 
 @media (width < 800px) {
@@ -119,13 +113,7 @@ p {
     gap: 0.6rem;
   }
 
-  .about {
-    margin-top: 32px;
-    width: 100%;
-    gap: 0.6rem;
-  }
-
-  .skills {
+  section {
     margin-top: 32px;
     width: 100%;
     gap: 0.6rem;
