@@ -13,7 +13,9 @@ header {
 
 p {
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: 0.87rem;
+  line-height: 1.25rem;
+  text-wrap: pretty;
   margin-top: 6px;
   margin-bottom: 0px;
 }
@@ -24,6 +26,19 @@ section {
   gap: 5rem;  
 }
 
+ul {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+h3 {
+  line-height: 1rem;
+  font-weight: 600;
+  text-wrap: pretty;
+  margin: 6px 0px 0px;
+}
+
 .hero {
   display: flex;
   flex-wrap: nowrap;
@@ -32,7 +47,7 @@ section {
   align-items: center;
   width: 60%;
   margin: 0 auto 0;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .direction {
@@ -82,10 +97,22 @@ section {
   flex-shrink: 0;
 }
 
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  text-wrap: pretty;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
 .techonologies {
-  list-style: none;
-  margin: 6px 0 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 1px;
@@ -99,7 +126,13 @@ section {
   flex-direction: column;
   align-items: center;
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-wrap: pretty;
+}
+
+.technology:nth-child(5) {
+  margin-left: 4px;
 }
 
 @media (width < 800px) {
@@ -116,6 +149,5 @@ section {
   section {
     margin-top: 32px;
     width: 100%;
-    gap: 0.6rem;
   }
 }
