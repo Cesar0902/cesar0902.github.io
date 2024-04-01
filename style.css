@@ -133,10 +133,6 @@ h3 {
   text-wrap: pretty;
 }
 
-.technology:nth-child(5) {
-  margin-left: 4px;
-}
-
 @media (width < 800px) {
   main {
     padding: 1rem;
@@ -152,4 +148,16 @@ h3 {
     margin-top: 32px;
     width: 100%;
   }
+}
+
+@media (width < 330px) {
+  main {
+    overflow: scroll;
+  }
+
+  .techonologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
