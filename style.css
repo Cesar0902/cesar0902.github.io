@@ -1,9 +1,8 @@
 body {
-  font-family: "Inter Variable", sans-serif;
+  font-family: 'Inter variable', sans-serif, Arial, Helvetica;
   margin: 0;
-
   color: #6b7280;
-  font-size: 0.87rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
   text-wrap: pretty;
@@ -13,7 +12,6 @@ main {
   padding: 4rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1400px;
 }
 
 header {
@@ -27,7 +25,8 @@ p {
 }
 
 section {
-  width: 60%;
+  width: 100%;
+  max-width: 42rem;
   margin: 30px auto 0;
 }
 
@@ -38,6 +37,7 @@ ul {
 }
 
 h3 {
+  font-size: 1rem;
   font-weight: 600;
   color: #000000;
   margin: 6px 0 0;
@@ -50,35 +50,37 @@ h3 {
   gap: 4rem;
 }
 
-.direction {
-  font-weight: 400;
-  font-size: 0.8rem;
-  text-decoration: none;
-  display: flex;
+.direction a {
+  display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 0.25rem;
+  font-weight: 400;
+  font-size: 0.78125rem;
+  text-decoration: none;
   color: #6b7280;
-  margin: 6px 0 0;
 }
 
-.direction:hover {
+.direction a:hover {
   text-decoration: underline;
 }
 
 .hero footer {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   margin-top: 6px;
 }
 
 .hero footer a {
-  color: #484848;
-  border: #868686 solid 1px;
-  border-radius: 8px;
+  width: 2rem;
+  height: 2rem;
+  box-sizing: border-box;
+  color: #5c5b5b;
+  border: #d6d3d3 solid 1px;
+  border-radius: 0.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
+  padding: 0.25rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -91,7 +93,7 @@ h3 {
   aspect-ratio: 199/193;
   object-fit: cover;
   border-radius: 10px;
-  width: 130px;
+  width: 112px;
   flex-shrink: 0;
 }
 
@@ -105,7 +107,7 @@ h3 {
 
 .date {
   color: #888;
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   text-wrap: nowrap;
   letter-spacing: 1.5px;
 }
@@ -126,13 +128,13 @@ h3 {
   text-wrap: nowrap;
 }
 
-@media (width < 800px) {
+@media (width < 768px) {
   main {
     padding: 1rem;
   }
 
   .hero {
-    margin: 0px;
+    margin: 0px auto 0;
     width: 100%;
     gap: 0.6rem;
   }
@@ -152,5 +154,4 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
 }
