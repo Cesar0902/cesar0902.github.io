@@ -1,5 +1,12 @@
 body {
   font-family: "Inter Variable", sans-serif;
+  margin: 0;
+
+  color: #6b7280;
+  font-size: 0.87rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-wrap: pretty;
 }
 
 main {
@@ -7,27 +14,21 @@ main {
   margin-left: auto;
   margin-right: auto;
   max-width: 1400px;
-  box-sizing: border-box;
 }
 
 header {
+  color: #000000;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 p {
-  color: #6b7280;
-  font-size: 0.87rem;
-  line-height: 1.25rem;
-  text-wrap: pretty;
-  margin-top: 6px;
-  margin-bottom: 0px;
+  margin: 6px 0 0;
 }
 
 section {
   width: 60%;
   margin: 30px auto 0;
-  gap: 5rem;
 }
 
 ul {
@@ -37,32 +38,27 @@ ul {
 }
 
 h3 {
-  line-height: 1rem;
   font-weight: 600;
-  text-wrap: pretty;
-  margin: 6px 0px 0px;
+  color: #000000;
+  margin: 6px 0 0;
 }
 
 .hero {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 60%;
   margin: 0 auto 0;
   gap: 4rem;
 }
 
 .direction {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  text-decoration: none;
-  color: #6b7280;
+  font-weight: 400;
   font-size: 0.8rem;
-  margin-top: 6px;
-  margin-bottom: 0px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+  margin: 6px 0 0;
 }
 
 .direction:hover {
@@ -76,8 +72,6 @@ h3 {
 }
 
 .hero footer a {
-  width: auto;
-  height: auto;
   color: #484848;
   border: #868686 solid 1px;
   border-radius: 8px;
@@ -105,13 +99,15 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-wrap: pretty;
   gap: 4rem;
 }
 
 .date {
   color: #888;
   font-size: 0.85rem;
-  text-wrap: pretty;
+  text-wrap: nowrap;
+  letter-spacing: 1.5px;
 }
 
 .techonologies {
@@ -127,10 +123,7 @@ h3 {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  color: #6b7280;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-wrap: pretty;
+  text-wrap: nowrap;
 }
 
 @media (width < 800px) {
