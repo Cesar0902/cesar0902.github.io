@@ -1,5 +1,5 @@
 body {
-  font-family: 'Inter variable', sans-serif, Arial, Helvetica;
+  font-family: 'Montserrat Variable', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
   margin: 0;
   color: #6b7280;
   font-size: 0.875rem;
@@ -131,7 +131,7 @@ h3 {
 }
 
 @media (width < 768px) {
-  main {
+  #app {
     padding: 1rem;
   }
 
