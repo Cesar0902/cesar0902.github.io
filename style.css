@@ -1,3 +1,4 @@
+/* CSS Reset */
 body {
   font-family: 'Montserrat', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
   font-weight: 500;
@@ -17,7 +18,7 @@ body {
 
 main {
   margin: 0 auto 0;
-  max-width: 42rem;
+  max-width: 48rem;
 }
 
 header {
@@ -47,6 +48,8 @@ h3 {
   color: #000000;
   margin: 0.375rem 0 0;
 }
+
+/* Hero */
 
 .hero {
   display: flex;
@@ -102,6 +105,8 @@ h3 {
   flex-shrink: 0;
 }
 
+/* Educacion */
+
 .item {
   display: flex;
   justify-content: space-between;
@@ -133,7 +138,6 @@ h3 {
   text-wrap: nowrap;
 }
 
-
 /* Proyectos */
 
 .proyects {
@@ -142,10 +146,16 @@ h3 {
   row-gap: 0.75rem;
 }
 
-
+.proyects-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(15.5rem, 1fr)
+  );
+  gap: 0.75rem;
+}
 
 .proyect {
-  width: 21.375rem;
   border: #d6d3d3 solid 1px;
   border-radius: 0.5rem;
   padding: 0.75rem;
@@ -218,13 +228,17 @@ h3 {
 
 @media (width < 426px) {
   main {
-    overflow: auto;
-    min-width: 18rem;
+    overflow: scroll;
+    /* min-width: 18rem; */
     margin: 0 auto 0;
   }
 
   .item {
     flex-wrap: wrap;
     row-gap: 0.375rem;
+  }
+
+  .proyect {
+    min-width: 24.5rem;
   }
 }
