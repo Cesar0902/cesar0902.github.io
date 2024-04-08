@@ -229,16 +229,11 @@ h3 {
 @media (width < 426px) {
   main {
     overflow: scroll;
-    /* min-width: 18rem; */
     margin: 0 auto 0;
   }
 
   .item {
     flex-wrap: wrap;
     row-gap: 0.375rem;
-  }
-
-  .proyect {
-    min-width: 24.5rem;
   }
 }
