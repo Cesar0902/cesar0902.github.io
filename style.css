@@ -1,11 +1,11 @@
 /* CSS Reset */
 body {
-  font-family: 'Montserrat', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+  font-family: "Montserrat", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana;
   font-weight: 500;
-  margin: 0;
-  color: #6b7280;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  margin: 0;
+  color: #6b7280;
   text-wrap: pretty;
 }
 
@@ -98,11 +98,10 @@ h3 {
 }
 
 .hero img {
-  aspect-ratio: 199/193;
   object-fit: cover;
   border-radius: 10px;
-  width: 112px;
-  flex-shrink: 0;
+  width: 7rem;
+  flex-shrink: 1;
 }
 
 /* Educacion */
@@ -148,10 +147,7 @@ h3 {
 
 .proyects-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(15.5rem, 1fr)
-  );
+  grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
   gap: 0.75rem;
 }
 
@@ -169,13 +165,10 @@ h3 {
   font-size: 0.75rem;
 }
 
-.proyect-data a {
-  text-decoration: none;
-  display: inline-flex;
-}
-
-.proyect-data a:hover {
-  text-decoration: underline;
+.proyect-data header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .proyect-data h3 {
